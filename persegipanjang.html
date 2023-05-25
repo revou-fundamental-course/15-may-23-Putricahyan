@@ -1,0 +1,50 @@
+<!DOCTYPE html">
+<html>
+     <head>
+          <title>Menghitung luas dan keliling persegi panjang</title>
+          <meta charset="utf-8">
+          <link rel="stylesheet" type="text/css" href="style.css"/>
+          <script type="text/javascript">
+            // fuction digunakan untuk kode fungsi dari rumus persegi panjang
+                function hitungPersegiPanjang()
+               {
+                    var Panjang, lebar, Luasp, Kelilingp;
+
+                     Panjang= parseInt(document.getElementById("panjang").value);
+                     lebar= parseInt(document.getElementById("lebar").value);
+
+
+                 Luasp = Panjang * lebar;
+                 Kelilingp = 2 * Panjang + 2 * lebar ;
+                 
+                 document.getElementById("luas").value =Luasp;
+                 document.getElementById("keliling").value =Kelilingp;
+               }
+          </script>
+     </head>
+
+     <body>
+          <div class="container">
+               <fieldset id="container">
+                   <h1>Katik Kalkulator Matematik</h1>
+                   <h4>Web app sederhana berfungsi menghitung luas dan kelililing Persegi dan Persegi Panjang</h4>
+                   <form name="calculator">
+
+          <h3>Menghitung luas dan keliling Persegi Panjang</h3>
+           <!-- img src digunakan untuk menampung gambar  -->
+           <p>
+            <img src="persegipanjang.jpg" width="250" height="150"/>
+          </p>
+
+         <!-- Form digunakan untuk menampung buton hitung dan reset juga button input  -->
+          <form class="persegiPanjang">
+               <p>Panjang : <input type="text" id="panjang"></p>
+               <p>Lebar : <input type="text" id="lebar"></p>
+               <p class="btn"><input type="button" value="Hitung"  style="background-color: salmon;" onclick="hitungPersegiPanjang();"> 
+               <input type="reset" value="Reset" style="background-color: rgb(253, 117, 102);" onclick="Reset();"> </p>
+               <p>Luas: <input type="text" id="luas"></p>
+               <p>Keliling: <input type="text" id="keliling"></p>
+          </form>
+     </div>
+     </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html">
+<html>
+     <head>
+          <title>Menghitung luas dan keliling persegi</title>
+          <meta charset="utf-8">
+          <link rel="stylesheet" type="text/css" href="style.css"/>
+          <script type="text/javascript">
+            // fuction digunakan untuk kode fungsi dari rumus persegi
+               function hitungLuasKeliling()
+               {
+                 var sisi, Keliling, Luas ;
+                 
+                 sisi = parseInt(document.getElementById("s1").value);
+
+                 Luas = sisi * sisi;
+                 Keliling = 4 * (sisi);
+                 
+                 document.getElementById("luasp").value =Luas;
+                 document.getElementById("kelilingp").value =Keliling;
+               }
+          </script>
+     </head>
+
+     <body>
+          <div class="container">
+               <fieldset id="container">
+                   <h1>Katik Kalkulator Matematik</h1>
+                   <h4>Web app sederhana berfungsi menghitung luas dan kelililing Persegi dan Persegi Panjang</h4>
+                   <form name="calculator">
+
+          <h3>Menghitung luas dan keliling Persegi</h3>
+          <!-- img src digunakan untuk menampung gambar  -->
+          <p>
+            <img src="persegi.png" width="250" height="150"/>
+          </p>
+        <!-- Form digunakan untuk menampung buton hitung dan reset juga button input  -->
+          <form>
+               <p>Sisi : <input type="text" id="s1"></p>
+               <p class="btn"><input type="button" value="Hitung"  style="background-color: salmon;" onclick="hitungLuasKeliling();"> 
+               <input type="reset" value="Reset" style="background-color: rgb(253, 117, 102);" onclick="Reset();"> </p>
+               <p>Luas: <input type="text" id="luasp"></p>
+               <p>Keliling: <input type="text" id="kelilingp"></p>
+          </form>
+     </div>
+  </body>
+</html>

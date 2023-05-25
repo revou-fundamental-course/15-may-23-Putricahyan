@@ -1,0 +1,36 @@
+@charset "utf-8";
+body{
+    width: auto;
+    background-color: rgb(88, 197, 248);
+    margin: 100px;
+    padding: 50px;
+    align-content: center;
+}
+
+h1{ 
+    align-content: center;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    text-align: center;
+}
+h4 { 
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    font-size: medium;
+    color: blue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form {
+    padding: 10px;
+    align-content: normal;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+    font-style: normal;
+    color: cadetblue;  
+}
+
+
+
